@@ -1,0 +1,31 @@
+.wrapper {
+    --dark3: #070807;
+    --dark9: #161716;
+    --dark12B: #1d1e1d;
+    --dark15: #252625;
+    --dark16: #282928;
+    --dark20: #313331;
+    --dark50: #7c807c;
+    --dark90: #dfe6df;
+    --dark100: #f7fff7;
+    --brown54B: #5e8a52;
+    --brown34: #3b5733;
+    --brown84: #91d67e;
+    --brown100: #adff96;
+    --deg: 33deg;
+    --pad: 25px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(var(--deg), var(--dark9), var(--dark12B), var(--dark15));
+    font-family: 'Monofur', 'Inconsolata', 'Consolas', monospace;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--dark50);
+}
+
+.title {
+    font-size: 40px;
+    text-align: center;
+}

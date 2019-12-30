@@ -1,0 +1,73 @@
+.my-logo {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+
+    .my-logo__m {
+        animation: my-logo-m-spin infinite 12s linear;
+        transform-origin: 50% 50%;
+    }
+
+    @keyframes my-logo-m-spin {
+        0% {
+            transform: rotate(0deg) scale(1);
+        }
+        5% {
+            transform: rotate(0deg) scale(1);
+        }
+        25% {
+            transform: rotate(90deg) scale(0.75);
+        }
+        50% {
+            transform: rotate(180deg) scale(1);
+        }
+        55% {
+            transform: rotate(180deg) scale(1);
+        }
+        75% {
+            transform: rotate(270deg) scale(0.75);
+        }
+        100% {
+            transform: rotate(360deg) scale(1);
+        }
+    }
+
+    .my-logo__l {
+        animation: my-logo-l-spin infinite 18s linear;
+        transform-origin: 50% 50%;
+    }
+
+    @keyframes my-logo-l-spin {
+        0% {
+            transform: rotate(0deg) scale(1);
+        }
+        3.33% {
+            transform: rotate(0deg) scale(1);
+        }
+        16.66% {
+            transform: rotate(-60deg) scale(0.6);
+        }
+        33.33% {
+            transform: rotate(-120deg) scale(1);
+        }
+        36.66% {
+            transform: rotate(-120deg) scale(1);
+        }
+        50% {
+            transform: rotate(-180deg) scale(0.6);
+        }
+        66.66% {
+            transform: rotate(-240deg) scale(1);
+        }
+        70% {
+            transform: rotate(-240deg) scale(1);
+        }
+        83.33% {
+            transform: rotate(-300deg) scale(0.6);
+        }
+        100% {
+            transform: rotate(-360deg) scale(1);
+        }
+    }
+}
