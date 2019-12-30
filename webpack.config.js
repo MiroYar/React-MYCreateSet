@@ -5,7 +5,7 @@ const { name, root } = require('./project.config.json');
 module.exports = {
     entry: `${root}/${name}/src/index.js`,
     output: {
-        path: path.join(__dirname, `${root}/${name}/dist`),
+        path: path.join(__dirname, `${root}/${name}/build`),
         filename: 'index.js'
     },
     module: {
