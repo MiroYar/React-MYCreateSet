@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function WebpackLogo() {
     return (
-        <a href="https://webpack.js.org/" target="_blank">
+        <a href="https://webpack.js.org/" target="_blank" title="Webpack.js">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="372 324 900 900">
                 <path fill="#FFF" d="M822 336l387 218.9v437.9l-387 218.9-387-218.9V554.9z" />
                 <path

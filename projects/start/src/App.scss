@@ -26,6 +26,29 @@
 }
 
 .title {
-    font-size: 40px;
+    position: relative;
+    font-size: 30px;
     text-align: center;
+    padding-right: 45px;
+    color: var(--dark90);
+    &::after {
+        position: absolute;
+        content: '';
+        animation: points infinite 3s linear;
+    }
+
+    @keyframes points {
+        0% {
+            content: '';
+        }
+        25% {
+            content: '.';
+        }
+        50% {
+            content: '..';
+        }
+        75% {
+            content: '...';
+        }
+    }
 }

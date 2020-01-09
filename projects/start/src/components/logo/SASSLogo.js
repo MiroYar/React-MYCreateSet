@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function SASSLogo() {
     return (
-        <a href="https://sass-lang.com/" target="_blank">
+        <a href="https://sass-lang.com/" target="_blank" title="SASS">
             <svg
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"

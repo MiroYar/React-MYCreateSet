@@ -3,7 +3,7 @@ import './MYLogo.scss';
 
 export default function MYLogo() {
     return (
-        <a href="https://github.com/MiroYar/React-MYCreateSet" target="_blank">
+        <a href="https://github.com/MiroYar/React-MYCreateSet" target="_blank" title="MiroYar">
             <svg
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
