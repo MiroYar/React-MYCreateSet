@@ -4,9 +4,9 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { name, root } = require('./project.config.json');
 
 module.exports = {
-    entry: `${root}/${name}/src/index.js`,
+    entry: `${root}/src/index.js`,
     output: {
-        path: path.join(__dirname, `${root}/${name}/build`),
+        path: path.join(__dirname, `${root}/build`),
         filename: 'index.js'
     },
     module: {
@@ -38,7 +38,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            template: `${root}/${name}/src/index.html`
+            template: `${root}/src/index.html`
         })
     ]
 };
