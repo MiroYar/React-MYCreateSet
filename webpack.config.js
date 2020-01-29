@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const { name, root } = require('./project.config.json');
+const { root } = require('./project.config.json');
 
 module.exports = {
     entry: `${root}/src/index.js`,
@@ -12,7 +12,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.jsx?$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader'
@@ -27,7 +27,7 @@ module.exports = {
                 use: ['style-loader', 'css-loader', 'sass-loader']
             },
             {
-                test: /\.(ttf|woff?2|svg)$/i,
+                test: /\.(ttf|woff2?|svg)$/i,
                 loader: 'file-loader',
                 options: {
                     name: 'fonts/[name].[ext]'
@@ -35,6 +35,7 @@ module.exports = {
             }
         ]
     },
+    resolve: { extensions: ['.js', '.jsx'] },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
