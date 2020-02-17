@@ -12,7 +12,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.jsx?$/,
+                test: /\.(jsx?|tsx?)$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader'
@@ -35,7 +35,7 @@ module.exports = {
             }
         ]
     },
-    resolve: { extensions: ['.js', '.jsx'] },
+    resolve: { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
     devServer: {
         historyApiFallback: true
     },
