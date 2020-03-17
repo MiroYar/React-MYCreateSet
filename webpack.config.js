@@ -8,7 +8,8 @@ module.exports = {
     output: {
         path: path.join(__dirname, `${root}/build`),
         publicPath: '/',
-        filename: 'index.js'
+        filename: 'index.js',
+        chunkFilename: '[name].chunk.js'
     },
     module: {
         rules: [
