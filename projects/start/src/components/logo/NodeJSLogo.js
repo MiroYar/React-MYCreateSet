@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function NodeJSLogo() {
     return (
-        <a href="https://nodejs.org/" target="_blank" title="Node.js">
+        <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer" title="Node.js">
             <svg
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"

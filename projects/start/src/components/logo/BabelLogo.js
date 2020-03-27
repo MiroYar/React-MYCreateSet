@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function BabelLogo() {
     return (
-        <a href="https://babeljs.io/" target="_blank" title="Babel.js">
+        <a href="https://babeljs.io/" target="_blank" rel="noopener noreferrer" title="Babel.js">
             <svg
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
